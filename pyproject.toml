@@ -1,0 +1,16 @@
+[project]
+name = "elan-0c82-image"
+version = "0.1.0"
+description = "Experimental raw image capture for ELAN 04f3:0c82"
+requires-python = ">=3.11"
+dependencies = ["libusb1>=3.3,<4", "pillow>=11,<13"]
+
+[project.scripts]
+elan0c82 = "elan0c82:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["elan0c82.py"]

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.png
+*.pgm
+*.raw
+*.bin
+*.pcap
+*.pcapng
