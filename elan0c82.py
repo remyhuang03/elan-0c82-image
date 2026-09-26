@@ -225,6 +225,7 @@ def run_full(handle, width: int, height: int, output: Path, seconds: float,
         print("Only one 80x80 tile was registered; full-area capture has not succeeded.")
         return 2
     print(f"Saved observed area to {output}. Transparent pixels were not scanned.")
+    print("The sensor cannot determine whether the whole fingertip is covered; inspect the preview.")
     return 0
 
 
